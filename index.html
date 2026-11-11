@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Análisis de Lazarillo de Tormes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>Análisis de Lazarillo de Tormes</h1>
+        <p>Recuento de palabras, letras y menciones literales en el texto.</p>
+    </header>
+
+    <main>
+        <p id="estado" class="estado" role="status">Analizando el texto…</p>
+
+        <!-- La tabla contiene las ocho métricas que completa el análisis. -->
+        <table>
+            <caption>Resultados del análisis</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Concepto</th>
+                    <th scope="col">Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Número total de palabras</th>
+                    <td id="total-palabras">—</td>
+                </tr>
+                <tr>
+                    <th scope="row">Número total de vocales</th>
+                    <td id="total-vocales">—</td>
+                </tr>
+                <tr>
+                    <th scope="row">Número total de consonantes</th>
+                    <td id="total-consonantes">—</td>
+                </tr>
+                <tr>
+                    <th scope="row">Apariciones de Lázaro de Tormes</th>
+                    <td id="menciones-lazaro">—</td>
+                </tr>
+                <tr>
+                    <th scope="row">Apariciones del ciego</th>
+                    <td id="menciones-ciego">—</td>
+                </tr>
+                <tr>
+                    <th scope="row">Apariciones del clérigo de Maqueda</th>
+                    <td id="menciones-clerigo">—</td>
+                </tr>
+                <tr>
+                    <th scope="row">Apariciones del arcipreste de San Salvador</th>
+                    <td id="menciones-arcipreste">—</td>
+                </tr>
+                <tr>
+                    <th scope="row">Apariciones de la mujer de Lázaro</th>
+                    <td id="menciones-mi-mujer">—</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

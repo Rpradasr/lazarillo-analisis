@@ -1,0 +1,95 @@
+/* Estilos sencillos y adaptables para la página de resultados. */
+:root {
+    color: #17212b;
+    background: #f7f9fb;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.encabezado {
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 0.5rem;
+    color: #15324b;
+    font-size: clamp(1.7rem, 5vw, 2.4rem);
+}
+
+.encabezado p {
+    margin: 0;
+}
+
+main {
+    width: min(100% - 2rem, 700px);
+    margin: 0 auto 2rem;
+}
+
+.estado {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid #536b7d;
+    border-left: 0.35rem solid #15324b;
+    border-radius: 0.25rem;
+    background: #e8f1f8;
+    color: #123047;
+}
+
+.estado.error {
+    border-color: #7a1b1b;
+    border-left-color: #7a1b1b;
+    background: #fff0f0;
+    color: #651515;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #657786;
+    background: #fff;
+}
+
+caption {
+    padding: 0.75rem;
+    color: #15324b;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+thead {
+    background: #15324b;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 0.7rem 0.75rem;
+    border: 1px solid #a6b2bb;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #f0f3f5;
+}
+
+tbody td {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 420px) {
+    th,
+    td {
+        padding: 0.6rem 0.5rem;
+    }
+}
